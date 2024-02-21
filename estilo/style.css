@@ -90,6 +90,21 @@ body{
     
 }
 
+.music{
+    margin: 35px 0;
+    background-color: var(--buttons);
+    padding: 15px 20px;
+    border-radius: 2px;
+}
+
+.more_menu{
+    
+    margin: 35px 20px;
+    background-color: var(--buttons);
+    padding: 15px 50px;
+    border-radius: 2px;
+}
+
 .top{
     
     width: 100%;
@@ -97,7 +112,73 @@ body{
     background-color: var(--details-one);
 }
 
-.seila{
-    padding: 20rem 4%;
+.sobre{
+    width: 100%;
+    min-height: calc(100vh);
     background-color: var(--background-two);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
+
+.info_container{
+    background-color: var(--buttons);
+    padding: 10rem;
+    margin: 20px;
+}
+
+.info_container_2{
+    background-color: var(--buttons);
+    padding: 15rem;
+    margin: 20px;
+}
+
+.especialidades{
+    padding: 10rem 4%;
+ 
+    
+}
+
+
+.esp_container{
+    padding: 10rem 40rem;
+    background-color: var(--details-one);
+    padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.builder_container{
+    margin-top: -100px;
+    padding: 1rem 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.builder{
+    
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.esp_build{
+    background-color: var(--details-two);
+    padding: 40px;
+    margin: 10px;
+    
+    
+}
+
+.info_esp{
+    margin: 20px;
+    margin-top: -90px;
+    background-color: var(--buttons);
+    padding: 10rem 17rem;
+
+   
+}
+
+
+
