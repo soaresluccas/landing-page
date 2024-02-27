@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,9 @@
 :root{
     --background: #160E26;
     --background-two: #0d0916;
+    --background-three: #fff;
     --buttons:#BDF288;
+    --buttons-two: #562ca9;
     --buttons-hover: #CBF291;
     --details-one: #D98982;
     --details-two: #8C2F0D;
@@ -28,8 +32,11 @@ html{
 }
 
 body{
-    background-color: var(--background);
+    background-color: var(--background-three);
+    font-family: "Kode Mono", monospace;
 }
+
+
 
 .header{
     padding: 0 5%;
@@ -41,11 +48,20 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+ 
+}
+
+#header{
     position: fixed;
     z-index: 11;
     top: 0;
     left: 0;
     right: 0;
+    transition: all ease 1s;
+}
+
+#header.scrollHide {
+    opacity: 0;
 }
 
 .navbar {
@@ -60,7 +76,7 @@ body{
 .op{
     
     margin: 35px 0;
-    background-color: var(--buttons);
+    background-color: var(--buttons-two);
     padding: 8px 40px;
     border-radius: 2px;
 }
@@ -76,7 +92,7 @@ body{
 .contato{
     
     margin: 35px 0;
-    background-color: var(--buttons);
+    background-color: var(--buttons-two);
     padding: 15px 50px;
     border-radius: 2px;
 }
@@ -85,14 +101,14 @@ body{
 #linha-vert {
     
     height: 40px;
-    border-right: 2px solid var(--buttons);
+    border-right: 2px solid var(--buttons-two);
     
     
 }
 
 .music{
     margin: 35px 0;
-    background-color: var(--buttons);
+    background-color: var(--buttons-two);
     padding: 15px 20px;
     border-radius: 2px;
 }
@@ -100,7 +116,7 @@ body{
 .more_menu{
     
     margin: 35px 20px;
-    background-color: var(--buttons);
+    background-color: var(--buttons-two);
     padding: 15px 50px;
     border-radius: 2px;
 }
@@ -109,7 +125,7 @@ body{
     
     width: 100%;
     min-height: calc(100vh);
-    background-color: var(--details-one);
+    background-color: var(--background-threee);
 }
 
 .sobre{
@@ -180,6 +196,8 @@ body{
    
 }
 
+
+
 .bot_lane{
     padding: 5rem 1.5rem 2rem;
     background-color: var(--background);
@@ -197,16 +215,18 @@ body{
 
 .box{
     background-color: var(--background-two);
-    padding: 3.2rem 1.25rem;
+    padding: 3.2rem 3.2rem;
     margin-top: -9rem;
-    border-radius: 12px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+    font-family: "Kode Mono", monospace;
     
 }
 
 .coluna_levels{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: -0.75rem;
     margin-right: -0.75rem;
     margin-top: -0.75rem;
@@ -214,43 +234,58 @@ body{
 
 .coluna{
     display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 0.75rem;
+    
 }
+
+
 
 .coluna_titulo{
     color: #fff;
-    font-weight: 800;
+    font-weight: 600;
+    
     line-height: 1.125;
     word-break: break-word;
 }
 
+.coluna_titulo h1{
+    font-size: 18px;    
+}
+
 .coluna_texto{
     color: #fff;
-    font-size: 18px;
+    font-size: 13px;
+    text-align: center;
 }
 
 .button_cnvs{
-    color: #fff;
-    padding: 1.25em 2em;
+    display: inline-block;
     
-
 }
 
 .button{
     font-weight: 400 !important;
-    font-family: "europa", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.25em 2em;
     border-radius: 9999px;
-    border-color: var(--buttons);
-    border-width: 2px;
+    border: 2px solid var(--buttons);
+    display: flex;
+    transition: all ease .2s;
+    align-items: center;
+
+}
+
+.button:hover{
+    background-color: var(--buttons-hover);
+    color: var(--background-two);
+    
 }
 
 .button .icon{
     height: 1.5em;
     width: 1.5em;
-
+    margin-right: 0.5em;
+    
 }
 
 .icon{
@@ -263,6 +298,12 @@ body{
 span{
     font-style: inherit;
     font-weight: inherit;
+    
+
 }
 
-
+.txt{
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
