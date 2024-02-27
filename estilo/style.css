@@ -51,18 +51,19 @@ body{
  
 }
 
-#header{
+ #header{
     position: fixed;
     z-index: 11;
     top: 0;
     left: 0;
     right: 0;
-    transition: all ease 1s;
-}
+    transition: transform 0.3s ease;
+} 
 
 #header.scrollHide {
-    opacity: 0;
-}
+    transform: translateY(-100%);
+} 
+
 
 .navbar {
     
