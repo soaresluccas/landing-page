@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
 }
 
 :root{
@@ -208,14 +210,72 @@ body{
 
 .titulo h1{
     max-width: 900px;
-    font-size: 35px;
+    font-size: 4rem;
+    line-height: 10rem;
     transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     margin-bottom: 20px;
 }
 
+.proj-container{
+    margin-top: 24px;
+    display: flex;
+    border-top: 1px solid var(--buttons-two);
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.coluna-um{
+    padding: 4rem;
+    height: 100vh;
+}
+
+.coluna-um .button{
+    color: #fff;
+    background-color: #562ca9;
+    border: 2px solid #562ca9;
+}
+
+.coluna-um .button:hover{
+    background-color: transparent;
+    color: #562ca9;
+}
+
+.coluna-dois{
+    
+    height: 100vh;
+    padding: 4rem;
+    width: 70%;
+    
+}
+
+.proj-lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: var(--background);
+}
+
+.proj-link{
+    margin: 10px;
+    height: 70%;
+    padding: 9.375rem;    
+    background-color: var(--buttons);
+}
+
+.proj-img{
+    margin: 10px;
+    height: 70%;
+    padding: 9.375rem;    
+    background-color: var(--buttons);
+    border-radius: 20px;
+}
+
 
 .bot_lane{
+    margin-top: 50rem;
     padding: 5rem 1.5rem 2rem;
     background-color: var(--background);
     display: flex;
@@ -282,17 +342,22 @@ body{
 .button{
     font-weight: 400 !important;
     text-decoration: none;
-    color: #fff;
+    
     padding: 1.25em 2em;
     border-radius: 9999px;
-    border: 2px solid var(--buttons);
+    
     display: flex;
     transition: all ease .2s;
     align-items: center;
 
 }
 
-.button:hover{
+.button_cnvs .button{
+    border: 2px solid var(--buttons);
+    color: #fff;
+}
+
+.button_cnvs .button:hover{
     background-color: var(--buttons-hover);
     color: var(--background-two);
     
@@ -323,4 +388,9 @@ span{
     align-items: center;
     display: inline-flex;
     justify-content: center;
+}
+
+footer{
+    height: 60vh;
+    background-color: var(--background);
 }
