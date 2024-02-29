@@ -17,6 +17,7 @@
     --buttons-hover: #CBF291;
     --details-one: #D98982;
     --details-two: #8C2F0D;
+    --cinza-: #bbbbbb;
 }
 
 html{
@@ -274,8 +275,86 @@ body{
 }
 
 
+/* formulario de contato */
+
+.contatar{
+    width: 100%;
+    min-height: calc(100vh);
+    margin-top: 30rem;
+}
+
+.container-ct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    padding: 9.375rem; 
+    background-color: #562ca9;   
+}
+
+form label{
+    margin: 10px;
+    border: solid 1px var(--cinza-);
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-flex;   
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-three);
+}
+
+form input{
+   border-radius: 2px;
+   margin: 5px;
+   width: 20rem;
+   height: 40px;
+   background-color: transparent;
+   border: none;
+}
+
+form input::placeholder{
+    font-family: "Kode Mono", monospace;
+    font-size: 18px;
+}
+
+form textarea{
+    border-radius: 2px;
+    width: 20rem;
+    height: 90px;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+form textarea::placeholder{
+    font-family: "Kode Mono", monospace;
+    font-size: 18px;
+}
+
+form svg{
+    margin: 10px;
+    font-size: 30px;
+    
+    
+}
+
+.img-ct{
+    height: 100vh;
+    width: 50%;
+    padding: 9.375rem;    
+    background-color: #BDF288;  
+}
+
 .bot_lane{
-    margin-top: 50rem;
+    margin-top: 10rem;
     padding: 5rem 1.5rem 2rem;
     background-color: var(--background);
     display: flex;
@@ -394,3 +473,4 @@ footer{
     height: 60vh;
     background-color: var(--background);
 }
+
