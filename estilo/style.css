@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Anton&display=swap');
 
 *{
     margin: 0;
@@ -129,8 +131,114 @@ body{
     
     width: 100%;
     min-height: calc(100vh);
-    background-color: var(--background-threee);
+    background-color: var(--background-three);
 }
+
+.top .flex{
+    padding: 10rem 4%;
+    justify-content: space-between;
+}
+
+.texto-top{
+    margin-top: 5rem;
+    text-align: justify;
+    width: 40rem;   
+    
+}
+
+.texto-top h2{
+    color: var(--buttons-two);
+    font-size: 30px;
+    font-family: "Anta", sans-serif;
+    
+}
+
+.texto-top p{
+    margin-top: 25px;
+    font-weight: bold;
+    color: var(--background);
+
+}
+
+.logo-top{
+   
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: -4rem;
+    position: relative;
+    cursor: default;
+
+}
+.info-cont{
+    margin-top: -10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#linha-vert-top{
+    margin-top: 5.2rem;
+    margin-right: 10px;
+    height: 12rem;
+    border-right: 2px solid var(--buttons-two);
+}
+
+.L{
+    font-family: "Anta", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 400px;
+    position: relative;
+    margin-top: -50px;
+    color: var(--buttons-two);
+    transition: transform 0.3s ease; 
+    display: inline-block;
+
+    
+}
+
+.L:hover{
+    transform: rotate(3deg);    
+}
+
+.P{
+    
+    font-family: "Anta", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 400px;
+    position: absolute;
+    margin-left: -10rem;
+    margin-top: 5rem;
+    color: var(--background);
+    transition: transform 0.3s ease; 
+    display: inline-block;
+    
+}
+
+.P:hover{
+    transform: translateY(4%);
+}
+
+.sec-logo{
+    position: relative;
+    left: 94px;
+    top: -200px;
+    font-size: 15px;
+    color: var(--background);
+}
+
+.back::before{
+    content: "";
+    position: relative;
+    left: -3.5rem;
+    top: -2rem;
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+
 
 .sobre{
     width: 100%;
@@ -295,9 +403,9 @@ form{
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    width: 50%;
+    width: 100%;
     padding: 9.375rem; 
-    background-color: #562ca9;   
+    background-color: var(--background);   
 }
 
 form label{
@@ -311,30 +419,33 @@ form label{
     background-color: var(--background-three);
 }
 
-form input{
+form .input{
    border-radius: 2px;
    margin: 5px;
    width: 20rem;
    height: 40px;
    background-color: transparent;
    border: none;
+   outline: none;
 }
 
-form input::placeholder{
+form .input::placeholder{
     font-family: "Kode Mono", monospace;
     font-size: 18px;
 }
 
-form textarea{
+form .textarea{
     border-radius: 2px;
     width: 20rem;
     height: 90px;
     margin: 5px;
     background-color: transparent;
     border: none;
+    outline: none;
+    resize: none;
 }
 
-form textarea::placeholder{
+form .textarea::placeholder{
     font-family: "Kode Mono", monospace;
     font-size: 18px;
 }
@@ -344,6 +455,29 @@ form svg{
     font-size: 30px;
     
     
+}
+
+form .btn-enviar{
+    margin-top: 40px;
+    padding: 1rem 10.5rem;
+    border: solid 2px #fff;
+    font-family: "Kode Mono", monospace;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+form .btn-enviar:hover{
+    background-color: var(--background-three);
+    color: var(--buttons-two);
 }
 
 .img-ct{
