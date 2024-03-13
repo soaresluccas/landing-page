@@ -164,7 +164,7 @@ body{
    
     margin-right: 5rem;
     margin-left: 5rem;
-    margin-top: -4rem;
+    margin-top: 1rem;
     position: relative;
     cursor: default;
 
@@ -188,7 +188,7 @@ body{
     font-family: "Anta", sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 400px;
+    font-size: 300px;
     position: relative;
     margin-top: -50px;
     color: var(--buttons-two);
@@ -202,15 +202,29 @@ body{
     transform: rotate(3deg);    
 }
 
+.prime-logo{
+    font-size: 150px;
+    position: relative;
+    left: 12rem;
+    top: -12rem;
+}
+
+.prime-logo-2{
+    font-size: 150px;
+    position: relative;
+    left: 10rem;
+    top: -12rem;
+}
+
 .P{
     
     font-family: "Anta", sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 400px;
+    font-size: 300px;
     position: absolute;
     margin-left: -10rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
     color: var(--background);
     transition: transform 0.3s ease; 
     display: inline-block;
@@ -223,8 +237,8 @@ body{
 
 .sec-logo{
     position: relative;
-    left: 94px;
-    top: -200px;
+    left: 170px;
+    top: -220px;
     font-size: 15px;
     color: var(--background);
 }
@@ -383,12 +397,52 @@ body{
 }
 
 
+/* MEU CURRICULO */
+
+.curriculo{
+    width: 100%;
+    min-height: calc(100vh);
+}
+
+.CV-container{
+    margin-top: 24px;
+    display: flex;
+    border-top: 1px solid var(--buttons-two);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.curriculo .titulo{
+    padding-top: 30rem;
+    
+}
+
+.curriculo .coluna-um{
+    padding: 4rem;
+    height: 100vh;
+}
+
+.curriculo .coluna-dois{
+    height: 100vh;
+    padding: 4rem;
+    width: 70%;
+}
+
+.CV-lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: var(--background);
+}
+
+
 /* formulario de contato */
 
 .contatar{
     width: 100%;
     min-height: calc(100vh);
-    margin-top: 30rem;
+    margin-top: 5rem;
 }
 
 .container-ct{
