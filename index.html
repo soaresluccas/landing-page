@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/menu.css">
     <title>Home page</title>
 </head>
-<body>
+<body  onload="showDescription(1)">
     <div class="header" id="header">
         <div class="interface">
             <div class="navbar">
@@ -93,69 +94,61 @@
                 <div class="esp_container">
                    <div class="builder_container">
                     <div class="builder">
-                        <div class="esp_build">
-                        
+                        <div class="esp_build" onclick="showDescription(1)">
+                           
                         </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(2)">
                             
                         </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(3)">
+                           
+                        </div>
+                        <div class="esp_build" onclick="showDescription(4)">
+                           
+                        </div>
+                        <div class="esp_build" onclick="showDescription(5)">
+                          
+                        </div>
+                    </div>
+                    <div class="builder">
+                        <div class="esp_build" onclick="showDescription(6)">
                             
                         </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(7)">
                             
                         </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(8)">
                             
                         </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(9)">
+                            
+                        </div>
+                        <div class="esp_build" onclick="showDescription(10)">
                             
                         </div>
                     </div>
                     <div class="builder">
-                        <div class="esp_build">
-                        
-                        </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(11)">
                             
                         </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(12)">
+                           
+                        </div>
+                        <div class="esp_build" onclick="showDescription(13)">
                             
                         </div>
-                        <div class="esp_build">
-                            
+                        <div class="esp_build" onclick="showDescription(14)">
+                           
                         </div>
-                        <div class="esp_build">
-                            
-                        </div>
-                        <div class="esp_build">
-                            
-                        </div>
-                    </div>
-                    <div class="builder">
-                        <div class="esp_build">
-                        
-                        </div>
-                        <div class="esp_build">
-                            
-                        </div>
-                        <div class="esp_build">
-                            
-                        </div>
-                        <div class="esp_build">
-                            
-                        </div>
-                        <div class="esp_build">
-                            
-                        </div>
-                        <div class="esp_build">
+                        <div class="esp_build" onclick="showDescription(15)">
                             
                         </div>
                     </div>
                    </div>
 
-                   <div class="info_esp">
-                       
+                   <div class="info_esp" id="info_esp">
+                        <h3>Especialidade</h3>
+                        <p>Descrição da especialidade</p>
                    </div>
                    
 
@@ -316,5 +309,85 @@
     </main>
 </body>
 
-<script src="script/header.js"></script>
+<script src="js/header.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Inicialmente, mostrar a descrição da primeira especialidade
+        showDescription(1);
+    });
+    
+    function showDescription(especialidade) {
+        var tituloEspecialidade = '';
+        var descricaoEspecialidade = '';
+        switch(especialidade) {
+            case 1:
+                tituloEspecialidade = 'Especialidade 1';
+                descricaoEspecialidade = 'Descrição da especialidade 1';
+                break;
+            case 2:
+                tituloEspecialidade = 'Especialidade 2';
+                descricaoEspecialidade = 'Descrição da especialidade 2';
+                break;
+            case 3:
+                tituloEspecialidade = 'Especialidade 3';
+                descricaoEspecialidade = 'Descrição da especialidade 3';
+                break;
+            case 4:
+                tituloEspecialidade = 'Especialidade 4';
+                descricaoEspecialidade = 'Descrição da especialidade 4';
+                break;
+            case 5:
+                tituloEspecialidade = 'Especialidade 5';
+                descricaoEspecialidade = 'Descrição da especialidade 5';
+                break;
+            case 6:
+                tituloEspecialidade = 'Especialidade 6';
+                descricaoEspecialidade = 'Descrição da especialidade 6';
+                break;
+            case 7:
+                tituloEspecialidade = 'Especialidade 7';
+                descricaoEspecialidade = 'Descrição da especialidade 7';
+                break;
+            case 8:
+                tituloEspecialidade = 'Especialidade 8';
+                descricaoEspecialidade = 'Descrição da especialidade 8';
+                break;
+            case 9:
+                tituloEspecialidade = 'Especialidade 9';
+                descricaoEspecialidade = 'Descrição da especialidade 9';
+                break;
+            case 10:
+                tituloEspecialidade = 'Especialidade 10';
+                descricaoEspecialidade = 'Descrição da especialidade 10';
+                break;
+            case 11:
+                tituloEspecialidade = 'Especialidade 11';
+                descricaoEspecialidade = 'Descrição da especialidade 11';
+                break;
+            case 12:
+                tituloEspecialidade = 'Especialidade 12';
+                descricaoEspecialidade = 'Descrição da especialidade 12';
+                break;
+            case 13:
+                tituloEspecialidade = 'Especialidade 13';
+                descricaoEspecialidade = 'Descrição da especialidade 13';
+                break;
+            case 14:
+                tituloEspecialidade = 'Especialidade 14';
+                descricaoEspecialidade = 'Descrição da especialidade 14';
+                break;
+            case 15:
+                tituloEspecialidade = 'Especialidade 15';
+                descricaoEspecialidade = 'Descrição da especialidade 15';
+                break;
+            default:
+                tituloEspecialidade = 'Especialidade não encontrada';
+                descricaoEspecialidade = 'Descrição não encontrada';
+        }
+        
+        // Atualizar os elementos HTML com as descrições
+        document.getElementById('info_esp').querySelector('h3').textContent = tituloEspecialidade;
+        document.getElementById('info_esp').querySelector('p').textContent = descricaoEspecialidade;
+    }
+</script>
 </html>
