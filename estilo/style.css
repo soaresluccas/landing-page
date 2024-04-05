@@ -43,89 +43,6 @@ body{
 
 
 
-.header{
-    padding: 0 5%;
-    background-color: transparent;
-}
-
-.header > .interface{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
- 
-}
-
- #header{
-    position: fixed;
-    z-index: 11;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: transform 0.3s ease;
-} 
-
-#header.scrollHide {
-    transform: translateY(-100%);
-} 
-
-
-.navbar {
-    
-    background-color: transparent;
-    display: flex;
-    align-self: center;
-    gap: 3rem;
-    justify-content: space-between;
-}
-
-.op{
-    
-    margin: 35px 0;
-    background-color: var(--buttons-two);
-    padding: 8px 40px;
-    border-radius: 2px;
-}
-
-.navbar-rigth{
-   
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contato{
-    
-    margin: 35px 0;
-    background-color: var(--buttons-two);
-    padding: 15px 50px;
-    border-radius: 2px;
-}
-
-
-#linha-vert {
-    
-    height: 40px;
-    border-right: 2px solid var(--buttons-two);
-    
-    
-}
-
-.music{
-    margin: 35px 0;
-    background-color: var(--buttons-two);
-    padding: 15px 20px;
-    border-radius: 2px;
-}
-
-.more_menu{
-    
-    margin: 35px 20px;
-    background-color: var(--buttons-two);
-    padding: 15px 50px;
-    border-radius: 2px;
-}
 
 .top{
     
@@ -284,18 +201,29 @@ body{
 
 
 .esp_container{
-    padding: 10rem 40rem;
+    padding: 10rem 4%;
     background-color: var(--details-one);
-    padding-bottom: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
+
+.esp_container h3{
+    margin: 0;
+    padding: 0;
+}
+
+.esp_container p{
+    margin: 0;
+    padding: 0;
+}
+
 .builder_container{
     margin-top: -100px;
-    padding: 1rem 4%;
+    
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .builder{
@@ -309,7 +237,7 @@ body{
     background-color: var(--details-two);
     padding: 40px;
     margin: 10px;
-    
+    width: 50%;
     
 }
 
@@ -317,7 +245,7 @@ body{
     margin: 20px;
     margin-top: -90px;
     background-color: var(--buttons);
-    padding: 10rem 17rem;
+    padding: 10rem;
 
    
 }
@@ -410,6 +338,7 @@ body{
     border-top: 1px solid var(--buttons-two);
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .curriculo .titulo{
@@ -433,7 +362,10 @@ body{
     align-items: center;
     justify-content: center;
     height: 70vh;
-    background-color: var(--background);
+    background: url(../imagens/curriculo.png);
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
