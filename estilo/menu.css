@@ -1,0 +1,85 @@
+
+
+.header{
+    padding: 0 5%;
+    background-color: transparent;
+}
+
+.header > .interface{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+ #header{
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease;
+} 
+
+#header.scrollHide {
+    transform: translateY(-100%);
+} 
+
+
+.navbar {
+    
+    background-color: transparent;
+    display: flex;
+    align-self: center;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.op{
+    
+    margin: 35px 0;
+    background-color: var(--buttons-two);
+    padding: 8px 40px;
+    border-radius: 2px;
+}
+
+.navbar-rigth{
+   
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato{
+    
+    margin: 35px 0;
+    background-color: var(--buttons-two);
+    padding: 15px 50px;
+    border-radius: 2px;
+}
+
+
+#linha-vert {
+    
+    height: 40px;
+    border-right: 2px solid var(--buttons-two);
+    
+    
+}
+
+.music{
+    margin: 35px 0;
+    background-color: var(--buttons-two);
+    padding: 15px 20px;
+    border-radius: 2px;
+}
+
+.more_menu{
+    
+    margin: 35px 20px;
+    background-color: var(--buttons-two);
+    padding: 15px 50px;
+    border-radius: 2px;
+}
